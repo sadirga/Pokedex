@@ -1,10 +1,10 @@
 # Pokedex Exercise
 
 First of all I took the resource from these 2 sites:
-> 1. ![pokeapi](/pokeapi.png = 100x150)  
+> 1. ![pokeapi](/pokeapi.png)  
 [Poke API Website](https://pokeapi.co/)  
 They provide everything about pokemon!  
 
-> 2. ![bulba](/BULBA.png = 100x150)  
+> 2. ![bulba](/BULBA.png)  
 [Bulbapedia Website](https://bulbapedia.bulbagarden.net/wiki/List_of_Pok%C3%A9mon_by_name)  
 I use this website for scraping pokemon images, they have bigger image
