@@ -5,7 +5,7 @@
 
 First of all I took the resource from these 2 sites:
 > 1. 
-<img src="pokeapi.png" width="150" height ='100' />  
+<img src="pokeapi.png" width="170" height ='100' />  
 
 [Poke API Website](https://pokeapi.co/)  
 They provide everything about pokemon!  
@@ -36,5 +36,45 @@ for j in y:                                         # this loop is to get the cl
         if j == 'gender symbol':
             break
         pokemon_list.append(j.lower())
+
+print('==================== POKEDEX ====================')  # Aesthetics use only
+
+pokemon = input('Input Pokemon Name: ').lower()             # Input command
+while pokemon[-3:] == 'mon':                                # While Loop condition
+    print('Please deh, itu nama Digimon, kamu salah lapak') # if the input has mon as digimon name have
+    pokemon = input('Input Pokemon Name: ').lower()         # then we have to input the name again.
+
+while pokemon not in pokemon_list:                          # Condition while the name is not in the list of pokemon names
+    print(f'{pokemon} bukan nama Pokemon')                  # it'll print this
+    pokemon = input('Input Pokemon Name: ').lower()         # And ask to input the pokemon name again
+
+else:
+    try:
+        url2 = f'https://bulbapedia.bulbagarden.net/wiki/{pokemon}_(Pok%C3%A9mon)' # for scrapping imageof the pokemon
+        web = requests.get(url2)    
+        dl = BeautifulSoup(web.content, 'html.parser')          
+        imgLinks = dl.findAll("a", {"class":"image"})
+        imglink= [i.img['src'] for i in imgLinks]
+
+        url = f'https://pokeapi.co/api/v2/pokemon/{pokemon}'                # finding essentials Pokemon Information
+        data =  requests.get(url)
+        pokedex = data.json()
+
+        print(f'Nama Pokemon    : {pokemon.upper()}')                       # Name of Pokemon
+        print(f"HP              : {pokedex['stats'][0]['base_stat']}")      # HP Stats
+        print(f"Attack          : {pokedex['stats'][1]['base_stat']}")      # Attack Stats
+        print(f"Defense         : {pokedex['stats'][2]['base_stat']}")      # Defense Stats
+        print(f"Speed           : {pokedex['stats'][5]['base_stat']}")      # Speed Stats
+        print(f"Type            : {pokedex['types'][0]['type']['name']}")   # Type Stats
+        print(f'URL Image       : https:{imglink[0]}')                      # The URL image of the pokemon
+        abilities = pokedex['abilities']                                    # Pokemon available Abilities
+        x = 1
+        print('Abilities       : ')
+        for i in range(len(abilities)):
+            print(x,".  ",abilities[i]['ability']['name'])
+            x += 1
+    except:                                                                 # Handling unexpedted error
+        print(f'Oops, Terjadi kesalahan, sepertinya kamu memasukkan jenis pokemonnya, \natau {pokemon} belum masuk sistem kami\nSilakan coba lagi dengan nama pokemon yang lain')
 ```
 
+### That's it, a simple apps of POKEDEX
