@@ -1,4 +1,4 @@
-<img align="center" width="300" height ='200' src="https://scontent-sin6-2.xx.fbcdn.net/v/t1.0-9/378462_335525306545013_1403366754_n.jpg?_nc_cat=102&_nc_sid=d2e176&_nc_ohc=GR1XOg5kpBUAX8lwy0z&_nc_ht=scontent-sin6-2.xx&oh=a391ffd87e7a69114aee5f0e41cc7ee4&oe=5F841100">  
+<p align="center"> <img width="300" height ='200' src="https://scontent-sin6-2.xx.fbcdn.net/v/t1.0-9/378462_335525306545013_1403366754_n.jpg?_nc_cat=102&_nc_sid=d2e176&_nc_ohc=GR1XOg5kpBUAX8lwy0z&_nc_ht=scontent-sin6-2.xx&oh=a391ffd87e7a69114aee5f0e41cc7ee4&oe=5F841100"> </p>  
 
 # Pokedex Exercise  
 <hr>
