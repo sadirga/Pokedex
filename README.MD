@@ -1,11 +1,11 @@
-<img align="center"  src="https://scontent-sin6-2.xx.fbcdn.net/v/t1.0-9/378462_335525306545013_1403366754_n.jpg?_nc_cat=102&_nc_sid=d2e176&_nc_ohc=GR1XOg5kpBUAX8lwy0z&_nc_ht=scontent-sin6-2.xx&oh=a391ffd87e7a69114aee5f0e41cc7ee4&oe=5F841100">  
+<img align="center" width="300" height ='200' src="https://scontent-sin6-2.xx.fbcdn.net/v/t1.0-9/378462_335525306545013_1403366754_n.jpg?_nc_cat=102&_nc_sid=d2e176&_nc_ohc=GR1XOg5kpBUAX8lwy0z&_nc_ht=scontent-sin6-2.xx&oh=a391ffd87e7a69114aee5f0e41cc7ee4&oe=5F841100">  
 
 # Pokedex Exercise  
 <hr>
 
 First of all I took the resource from these 2 sites:
 > 1. 
-<img src="pokeapi.png" width="100" height ='100' />  
+<img src="pokeapi.png" width="150" height ='100' />  
 
 [Poke API Website](https://pokeapi.co/)  
 They provide everything about pokemon!  
